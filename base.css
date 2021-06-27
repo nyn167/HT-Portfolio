@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --base-color: #F9A826;
+    --base-color-2: rgb(51, 92, 33);
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+/*comman attributes*/
+.hr{
+    width: 90%;
+    margin: 0 auto;
+    border: var(--base-color) solid;
+}
+
+.heading{
+ /*   width: 60%;
+    margin: auto;
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: var(--base-color-2);
+    padding: 1rem 0;
+    text-align: center;
+    background: var(--base-color);
+    border-radius: 0px 50px 10px 50px;*/
+
+    margin-left: 4.8%;
+    font-size: 1.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: var(--base-color-2);
+    padding: 0.4rem;
+    background: var(--base-color);
+    width: fit-content;
+    border-top-right-radius: 20px;
+}
+
+.heading2{
+    width: 40%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: var(--base-color);
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    background: var(--base-color-2);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Hero Nav*/
+.hero_nav {
+    background-color: var(--base-color-2);
+    min-height: 5rem;
+    border-bottom-left-radius: 50px;
+    margin: 0;
+    position: sticky;
+}
+
+.hero_nav .sym{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    color: var(--base-color-2);
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background: var(--base-color);
+    padding: 25px;
+    
+}
+
+.hero_nav .opennav {
+    color: var(--base-color);
+    background: var(--base-color-2);
+    width: 2rem;
+    font-size: 1.5rem;
+    position: fixed;
+    text-align: center;
+    top: 3%;
+    right: 6%;
+}
+
+.hero_nav .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(41, 40, 40);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.hero_nav .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    color: var(--base-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.hero_nav .sidenav a.active {
+    color: #f1f1f1;
+}
+
+.hero_nav .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*hero img and description*/
+.hero_desc {
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero_desc .hero_img {
+    margin: auto;
+    display: block;
+    max-height: 20rem;
+}
+
+.hero_desc .hero_name {
+    font-size: 1.9rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--base-color-2);
+}
+
+.hero_desc .hero_intro {
+    font-size: 1.1rem;
+    color: var(--base-color);
+    margin: auto;
+    font-weight: 900;
+}
+
+.hero_intro::before {
+    content: "I Am Affiliate At ";
+    color: var(--base-color-2);
+    font-weight: 300;
+}
+
+/*Blogs*/
+
+.cards{
+    margin-top: 2rem;
+}
+
+
+
+.hero_card{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.hero_card .container{
+    width: 65%;
+    box-shadow: 10px 5px 10px #b4b4b4;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width:576px) {
+    .hero_card .container{
+        width: 35%;
+    }
+}
+
+@media (min-width:998px) {
+    .hero_card .container{
+        width: 20%;
+    }
+}
+
+.hero_card .card_heading{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'roboto';
+    font-weight: 800;
+    color:var(--base-color);
+    background: #e2e2e2;
+}
+
+.card_body{
+    margin-top: 0.2rem;
+    font-family: 'Roboto';
+    font-weight: 550;
+    color: var(--base-color-2);
+}
+
+.hero_card .hero_btn{
+    margin: auto;
+    margin-top: 12px;
+    width: 50%;
+    padding: 0.5rem;
+    background: var(--base-color);
+    color: var(--base-color-2);
+    border-radius: 20px;
+}
+
+.hero_card .hero_btn{
+    text-decoration: none;
+}
+
+.affiliate_desc{
+    
+    margin: 2rem auto;
+}
+
+.company1 {
+    margin-top: 1rem;
+    width: 100%;
+    color: var(--base-color-2);
+}
+
+.company1 .desc {
+    font-size: 1rem;
+    font-family: 'roboto';
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.company1 p,ul{
+    margin: 0;
+}
+
+.affiliate_desc span{
+    color: var(--base-color);
+    font-weight: 800;
+}
+
+.affiliate_desc .link::before{
+    content: "Visit the website for more details ";
+}
+
+.affiliate_desc a{
+    background: var(--base-color);
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 1px 5px;
+}
+
+.footer{
+    height: 16rem;
+    background: var(--base-color-2);
+    font-family: 'roboto'; 
+    margin-top: 1rem ; 
+    padding-top: 5rem;
+    position: static;
+}
+
+
+.footer .hero_mapping{
+   display: flex;
+   flex-direction: column;
+}
+
+.footer a{
+    padding: 1rem 0;
+    color: var(--base-color);
+    font-weight: 800;
+
+}
+
+.footer .connect{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 15%;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.copyright p{
+    margin-block-start: 0;
+}
